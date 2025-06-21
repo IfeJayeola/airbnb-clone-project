@@ -122,3 +122,5 @@ Redis: Used for caching and session management.
 - `Secured Payment Processing:` is using trusted third-party to handle payment. This ensures safe payment with limited liability. 
 
 ## CI/CD Pipeline
+CI/CD Pipeline is an automated process by which software teams automate creation, testing and deployment of applications. CI stands for continuous integration and is the process of integrating codes to a central shared repository and automatically running tests for early error detection. CD is continuous delivery / deployment and it enables organizations to deploy their codes automatically. 
+CI/CD Pipeline reduces errors or bugs that are deployed during production and gives users better experience. 
