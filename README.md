@@ -35,6 +35,75 @@ Redis: Used for caching and session management.
 
 ## Database Design
 
+### Entities and Relationships
+
+#### 1. Users
+- `id`: Unique identifier for the user
+- `name`: Full name of the user
+- `email`: Email address (must be unique)
+- `password`: Hashed password for login
+- `role`: Role of the user (`host` or `guest`)
+
+**Relationships:**
+- A user can own multiple properties (if host)
+- A user can make multiple bookings (if guest)
+- A user can leave multiple reviews
+
+---
+
+#### 2. Properties
+- `id`: Unique identifier for the property
+- `title`: Name or title of the property listing
+- `description`: Details about the property
+- `location`: Address or general location
+- `price_per_night`: Rental cost per night
+- `owner_id`: The `id` of the user who owns this property
+
+**Relationships:**
+- A property belongs to one user (host)
+- A property can have multiple bookings
+- A property can have multiple reviews
+
+---
+
+#### 3. Bookings
+- `id`: Unique identifier for the booking
+- `user_id`: ID of the guest who made the booking
+- `property_id`: ID of the booked property
+- `start_date`: Date the booking begins
+- `end_date`: Date the booking ends
+- `status`: Booking status (`confirmed`, `cancelled`, etc.)
+
+**Relationships:**
+- A booking belongs to one user and one property
+- A booking can have one payment
+- A booking can receive one review
+
+---
+
+#### 4. Reviews
+- `id`: Unique identifier for the review
+- `user_id`: ID of the reviewer (guest)
+- `property_id`: ID of the reviewed property
+- `rating`: Star rating (e.g. 1-5)
+- `comment`: Written feedback from the guest
+
+**Relationships:**
+- A review belongs to one user and one property
+- A booking can have one review
+
+---
+
+#### 5. Payments
+- `id`: Unique identifier for the payment
+- `booking_id`: ID of the related booking
+- `amount`: Total amount paid
+- `payment_date`: When the payment was made
+- `status`: Payment status (`paid`, `pending`, `failed`)
+
+**Relationships:**
+- A payment belongs to one booking
+
 ## Feature Breakdown
 
 ## API Security
