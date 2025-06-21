@@ -8,6 +8,7 @@ This is an hands-on project that will simulate the Airbnb. It will involve using
  - Booking System
  - Payment Processing 
  - Data Optimization
+
 The tech stack is
  - Django
  - Django REST Framework
