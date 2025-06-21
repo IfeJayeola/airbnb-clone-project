@@ -105,7 +105,13 @@ Redis: Used for caching and session management.
 - A payment belongs to one booking
 
 ## Feature Breakdown
-
+- `API Documentation:` explains how an api is used. It makes development faster and coll easier. 
+- `User Authentication:` means verifying who a user is. It helps with security and to give user personalized content. 
+- `Property Management:`manages property listing. Through this, property listings are created, read, updated and deleted. 
+- `Booking System:` manages details of bookings. It's creates, retrieve and update bookings. It helps to track each booking. 
+- `Payment Processing:` handles the electronic payment mass for booking. It helps to make bookings with convenience. 
+- `Review System:` handle reviews on property. It helps users to do on comment about their experience with a property. 
+- `Database Optimizations:` uses indexing for fast data retrieve and caching to reduce database load. This improves user's experience 
 ## API Security
 
 ## CI/CD Pipeline
