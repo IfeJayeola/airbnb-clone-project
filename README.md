@@ -113,5 +113,12 @@ Redis: Used for caching and session management.
 - `Review System:` handle reviews on property. It helps users to do on comment about their experience with a property. 
 - `Database Optimizations:` uses indexing for fast data retrieve and caching to reduce database load. This improves user's experience 
 ## API Security
+### Security measures and their importance
+- `Authentication:` verify who a user is. It prevents authorized person access to the user's data and gives user personalized content. 
+- `Authorization:` means controlling what a user has access to. It prevents user from accessing Admin-only section or other user's data
+- `Rate limiting:` means restricting number of request a user can make per time. This prevents brute force attack. 
+- `Data Validation and Sanitation:` means checking  and cleaning inputs from forms and APIs to prevent sql injection or XSS
+- `SSL Encryption:` is encrypting all data communication between client and server. It keeps user data safe during transmission. 
+- `Secured Payment Processing:` is using trusted third-party to handle payment. This ensures safe payment with limited liability. 
 
 ## CI/CD Pipeline
