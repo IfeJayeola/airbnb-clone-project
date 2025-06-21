@@ -1,5 +1,23 @@
 # airbnb-clone-project
 
+## Project Overview 
+This is an hands-on project that will simulate the Airbnb. It will involve using of full fullstack  knowledge and CI/CD Pipeline.
+ The goal of this project includes:
+ - User Management
+ - Property Management
+ - Booking System
+ - Payment Processing 
+ - Data Optimization
+ The tech stack is
+ - Django
+ - Django REST Framework
+ - PostgreSQL
+ - GraphQL
+ - Celery
+ - Redis
+ - Docker
+ - CI/CD Pipelines
+
 ## Team Roles
 
 **Business analyst:** studies the customer work flow and get feedback from stackholder. The business analyst turns needs into requirements for the team. 
@@ -124,3 +142,4 @@ Redis: Used for caching and session management.
 ## CI/CD Pipeline
 CI/CD Pipeline is an automated process by which software teams automate creation, testing and deployment of applications. CI stands for continuous integration and is the process of integrating codes to a central shared repository and automatically running tests for early error detection. CD is continuous delivery / deployment and it enables organizations to deploy their codes automatically. 
 CI/CD Pipeline reduces errors or bugs that are deployed during production and gives users better experience. 
+Tools for CI/CD in this project include docker and gitlab
